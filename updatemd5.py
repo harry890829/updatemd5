@@ -28,6 +28,17 @@ def md5sum(fname):
         return ""
     return m.hexdigest()
 
-if __name__ == '__main__':
-    print '初始化项目'
+def main():
+    argvlen = len(sys.argv)
+    if argvlen == 1:
+        pass
+    else:
+        path = sys.argv[1]
+        if os.path.isdir(path):
+            pass
+        else:
+            pass
     print md5sum("./README.md")
+
+if __name__ == '__main__':
+    main()
